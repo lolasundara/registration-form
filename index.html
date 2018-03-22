@@ -3,35 +3,32 @@
 <head>
   <meta charset="utf-8">
   <title>Registration form</title>
-  <link href="css/grid.css" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 
-  <section class="contact pad-t-2 pad-b-2">
-    <div class="">
-      <h1>Send us a sweet little note</h1>
+  <form class="push-0" method="POST" action="https://formspree.io/sund0037@algonquinlive.com">
+    <section class="island-2">
+      <div class="grid">
+        <h1>Want to go to Mars?</h1>
+        <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
-      <form class="push-0" method="POST" action="https://formspree.io/sund0037@algonquinlive.com">
-        <div class="push">
-          <label for="name">Name</label>
-          <input id="name" name="name" required>
-        </div>
-        <div class="push">
-          <label for="email">Your email</label>
-          <input id="email" type="email" placeholder="me@me.com" name="email" required>
-        </div>
-        <div class="push">
-          <label for="subject">Subject</label>
-          <select id="subject" name="_subject">
-            <option>Get a quote</option>
-            <option>General Question</option>
-            <option>Just to talk</option>
-          </select>
-        </div>
+        <fieldset>
+          <legend class="pad-t-1-2 pad-b-1-2">Personal details</legend>
+          <div class="grid">
+            <div class="unit left pad-t-1-2 pad-b-1-2 xs-1 s-1 m-1 l-1-2">
+              <label for="name">Name</label>
+              <input id="name" name="name" required>
+            </div>
+
+            <div class="unit right pad-t-1-2 pad-b-1-2 xs-1 s-1 m-1 l-1-2">
+              <label for="number">Age</label>
+              <input id="number" type="number" required>
+            </div>
 
 </body>
 </html>
