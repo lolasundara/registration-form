@@ -3,56 +3,59 @@
 <head>
   <meta charset="utf-8">
   <title>Registration form</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 
   <form class="push-0" method="POST" action="https://formspree.io/sund0037@algonquinlive.com">
     <section class="island-2">
       <div class="grid">
-        <h1>Want to go to Mars?</h1>
-        <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+        <div class="unit">
+          <h1>Want to go to Mars?</h1>
+          <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+
+          <fieldset>
+            <legend class="pad-t-1-2 pad-b-1-2">Personal details</legend>
+            <div class="grid">
+              <div class="unit left pad-t-1-2 pad-b-1-2 xs-1 s-1 m-1 l-1-2">
+                <label for="name">Name</label>
+                <input id="name" name="name" required>
+              </div>
+
+              <div class="unit right pad-t-1-2 pad-b-1-2 xs-1 s-1 m-1 l-1-2">
+                <label for="number">Age</label>
+                <input id="number" type="number" required>
+              </div>
+
+              <div class="unit left pad-t-1-2 pad-b-1-2 xs-1 s-1 m-1 l-1-2">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required>
+              </div>
+
+              <div class="unit right pad-t-1-2 pad-b-1-2 xs-1 s-1 m-1 l-1-2">
+                <label for="subject">Physical fitness</label>
+                <select id="subject" name="_subject">
+                  <option>Super-human</option>
+                  <option>Fit as a fiddle</option>
+                  <option>Not terribly strong</option>
+                  <option>A little couch-potato-y</option>
+                </select>
+              </div>
+
+              <div class="unit right pad-t-1-2 xs-1 s-1 m-1 l-1">
+                <label for="massage">Address</label>
+                <textarea id="message"></textarea>
+              </div>
+            </div>
+          </fieldset>
 
         <fieldset>
-          <legend class="pad-t-1-2 pad-b-1-2">Personal details</legend>
-          <div class="grid">
-            <div class="unit left pad-t-1-2 pad-b-1-2 xs-1 s-1 m-1 l-1-2">
-              <label for="name">Name</label>
-              <input id="name" name="name" required>
-            </div>
-
-            <div class="unit right pad-t-1-2 pad-b-1-2 xs-1 s-1 m-1 l-1-2">
-              <label for="number">Age</label>
-              <input id="number" type="number" required>
-            </div>
-
-            <div class="unit left pad-t-1-2 pad-b-1-2 xs-1 s-1 m-1 l-1-2">
-              <label for="email">Email</label>
-              <input id="email" type="email" name="email" required>
-            </div>
-
-            <div class="unit right pad-t-1-2 pad-b-1-2 xs-1 s-1 m-1 l-1-2">
-              <label for="subject">Physical fitness</label>
-              <select id="subject" name="_subject">
-                <option>Super-human</option>
-                <option>Fit as a fiddle</option>
-                <option>Not terribly strong</option>
-                <option>A little couch-potato-y</option>
-              </select>
-            </div>
-
-            <div class="unit right pad-t-1-2 xs-1 s-1 m-1 l-1">
-              <label for="massage">Address</label>
-              <textarea id="message"><textarea>
-            </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>Mission Statement</legend>
+          <legend>Mission statement</legend>
           <div>
             <label for="details">Why do you want to go to Mars?</label>
             <textarea id="details" name="message"></textarea>
