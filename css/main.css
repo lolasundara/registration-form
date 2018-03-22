@@ -1,0 +1,39 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  border-bottom: 1px solid #000;
+}
+
+body {
+  background-color: #fff;
+}
+
+.btn {
+  padding: .5rem 1rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #f2f2f2;
+}
+
+input,
+textarea,
+select {
+  border: solid #f2f2f2;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .left {
+    padding-right: 1em;
+  }
+
+  .right {
+    padding-right: 1em;
+  }
+}
